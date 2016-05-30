@@ -14,16 +14,16 @@ _Webpack Hot-Module Replacement Preprocessor and Runtime for KnockoutJS_
 
 ## Usage
 
-#### 1. Add `ko-hot-loader/babel` to your babel config (e.g. `.babelrc`)
-**.babelrc**
+##### 1. Add `ko-hot-loader/babel` to your babel config (e.g. `.babelrc`)
+**_.babelrc_**
 ```json
 {
   "plugins": ["ko-hot-loader/babel"]
 }
 ```  
 
-#### 2a. Add HMR Entries and Plugin to your Webpack config and `hot: true, publicPath: 'http://localhost:8080/'` to your dev server config
-**webpack.config.js**
+##### 2a. Add HMR Entries and Plugin to your Webpack config and `hot: true, publicPath: 'http://localhost:8080/'` to your dev server config  
+**_webpack.config.js_**
 ```javascript
 entry: [
   'webpack/hot/dev-server',
@@ -48,9 +48,9 @@ const server = new DevServer(compiler, {
 
 **or**
 
-#### 2b. Invoke the dev server cli with `--hot`
+##### 2b. Invoke the dev server cli with `--hot`
 ```bash
 webpack-dev-server --hot --inline --config webpack.config.js
-```
+```  
 
-#### 3. Profit :moneybag:
+##### 3. Profit :moneybag:

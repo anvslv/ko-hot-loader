@@ -30,7 +30,7 @@ describe('runtime/components', () => {
   })
 
   it('should reload the component when it changes on disk', function() {
-    this.timeout(10000)
+    this.timeout(30000)
 
     return browser
       .on('page', (type, message) => {
