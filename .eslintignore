@@ -1,0 +1,3 @@
+lib
+test/babel/**/input.js
+test/babel/**/output.js
