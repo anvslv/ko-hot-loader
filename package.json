@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/profiscience/ko-hot-loader.git"
+    "url": "https://github.com/anvslv/ko-hot-loader.git"
   },
   "keywords": [
     "ko",
@@ -29,9 +29,9 @@
   "author": "Casey Webb <notcaseywebb@gmail.com>",
   "license": "WTFPL",
   "bugs": {
-    "url": "https://github.com/profiscience/ko-hot-loader/issues"
+    "url": "https://github.com/anvslv/ko-hot-loader/issues"
   },
-  "homepage": "https://github.com/profiscience/ko-hot-loader",
+  "homepage": "https://github.com/anvslv/ko-hot-loader",
   "peerDependencies": {
     "knockout": "^3.4.0"
   },
