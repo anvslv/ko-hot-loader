@@ -2,6 +2,7 @@ const path = require('path')
 const webpack = require('webpack')
 
 module.exports = {
+  mode: 'development',
   context: __dirname,
   entry: [
     'webpack/hot/dev-server',
@@ -14,20 +15,24 @@ module.exports = {
     publicPath: 'http://localhost:8080/'
   },
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.json?$/,
-        loader: 'json'
+        use: { 
+          loader: 'json'
+        }
       },
       {
         test: /\.js?$/,
-        exclude: /(node_modules)/,
-        loader: 'babel',
-        query: {
-          plugins: [path.resolve(__dirname, '../../../src/babel')],
-          presets: ['es2015']
+        exclude: /node_modules/,
+        use: {
+            loader: 'babel-loader',
+            options: {
+                presets: ['@babel/preset-env'],
+                plugins: [path.resolve(__dirname, '../../../src/babel')],
+            }
         }
-      }
+      } 
     ]
   },
   plugins: [

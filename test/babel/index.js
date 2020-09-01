@@ -1,7 +1,7 @@
 const path = require('path')
 const fs = require('fs')
 const { expect } = require('chai')
-const { transformFileSync } = require('babel-core')
+const { transformFileSync } = require('@babel/core')
 
 describe('ko-hot-loader babel preprocessor', () => {
   fs.readdirSync(__dirname).forEach((testName) => {
