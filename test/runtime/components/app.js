@@ -1,7 +1,13 @@
-require('./sut')
+import './sut'
+import ko from 'knockout';
+import domready from 'domready';
 
 window.onbeforeunload = () => {
   throw new Error('SHOULD NOT DO A FULL PAGE RELOAD')
 }
 
-require('domready')(() => require('knockout').applyBindings())
+domready(() => {
+  ko.applyBindings();
+});
+
+ 

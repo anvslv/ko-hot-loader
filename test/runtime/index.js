@@ -1,1 +1,1 @@
-require('./components/test')
+import './components/test'

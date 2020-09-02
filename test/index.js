@@ -1,2 +1,2 @@
-require('./babel')
-require('./runtime')
+import './babel'
+import './runtime'
