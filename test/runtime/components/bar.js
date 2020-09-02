@@ -1,6 +1,6 @@
-import ko from 'knockout';
+import kr from '../../../src/registration';
 
-ko.components.register('sut', {
+kr.components.registerOrUpate('sut', {
   template: '<div id="bar-text" data-bind="text: text"></div>',
   viewModel(params) {
     this.text = 'BAR'

@@ -1,6 +1,6 @@
 import ko from 'knockout';
 
-module.exports = {
+const kr = {
     components: { 
         unregister: (name) => {
             if (ko.components.isRegistered(name)){
@@ -17,5 +17,7 @@ module.exports = {
             ko.components.register(name, config);
         }
     } 
-} 
+}
+ 
+export default kr;
 

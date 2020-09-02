@@ -4,7 +4,7 @@ import generate from 'babel-generator'
 function isKoComponentRegistration({ object, property }) {
   return object && property && object.object && object.property &&
     object.property.name  === 'components'  &&
-    property.name         === 'register'
+    property.name         === 'registerOrUpate'
 }
 
 module.exports = () => ({

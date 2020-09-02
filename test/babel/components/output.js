@@ -1,4 +1,4 @@
-ko.components.register('FOO', require('ko-hot-loader').proxy(module.id, 'FOO', {
+kr.components.registerOrUpate('FOO', require('ko-hot-loader').proxy(module.id, 'FOO', {
   template: '<div></div>',
 
   viewModel(params) {
